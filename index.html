@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon Dice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main">
+    <section class="container">
+      <button type="button" id="btnInfo" class="info cursor" onclick="gameInfo()"></button>
+      <h1>Simon Dice</h1>
+      <div class="round">
+        <span>Ronda</span>
+        <span id="level" class="level">---</span>
+      </div>
+      <div class="game-container">
+        <div class="game-buttons">
+          <button id="amarillo" type="button" class="button-1" data-color="amarillo"></button>
+          <button id="azul" type="button" class="button-2" data-color="azul"></button>
+          <button id="rojo" type="button" class="button-3" data-color="rojo"></button>
+          <button id="verde" type="button" class="button-4" data-color="verde"></button>
+        </div>
+        <span id="counter" class="counter hide"></span>
+        <button type="button" id="btnEmpezar" class="start-button cursor" onclick="empezarJuego()">¡Empezar a jugar!</button>
+      </div>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
